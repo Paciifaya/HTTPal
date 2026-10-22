@@ -29,7 +29,7 @@ func main() {
 	)
 
 	if err != nil {
-		log.Fatalf("could not create request: %v", fmt.Errorf())
+		log.Fatalf("could not create request: %v", err)
 	}
 
 	request.Header.Set("User-Agent", "fetch-cli/1.0")
